@@ -1,5 +1,5 @@
 # Encripta
-Seja um assassino e escreva uma pista ou um detetive e encontre a solução de um crime.
+Pista ou solução, é você quem escolhe.
 
 ## Jogo
 
