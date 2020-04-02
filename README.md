@@ -1,7 +1,9 @@
 # Encripta
-> Pista ou solução, é você quem decide.
+Seja um assassino e escreva uma pista, ou um detetive e encontre a solução de um crime.
 
 ## Jogo
+
+> Pista ou solução, é você quem decide.
 
 O usuário irá assumir o papel de assassino ou detetive ao inserir uma palavra na página, gerando uma pista ou uma solução.
 
