@@ -3,8 +3,6 @@ Seja um assassino e escreva uma pista ou um detetive e encontre a solução de u
 
 ## Jogo
 
-###### Pista ou solução, é você quem decide.
-
 O usuário irá assumir o papel de assassino ou detetive ao inserir uma palavra na página, gerando uma pista ou uma solução.
 
 Acesse pelo GitHub Pages:
@@ -26,8 +24,8 @@ Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista 
 Qual será o desfecho do "Crime da Cripta"?
 
 Escolha um personagem:
-- [ ] Assassino: cifre uma pista para cena do crime. 
-- [ ] Detetive: decifre a pista e solucione o caso.
+- [ ] **Assassino** cifre uma pista para cena do crime. 
+- [ ] **Detetive** decifre a pista e solucione o caso.
 
 # Objetivos
 
