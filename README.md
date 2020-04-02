@@ -1,5 +1,5 @@
 # Encripta
-Seja um assassino e escreva uma pista, ou um detetive e encontre a solução de um crime.
+Seja um assassino e escreva uma pista ou um detetive e encontre a solução de um crime.
 
 ## Jogo
 
@@ -17,7 +17,19 @@ www.encripta.com
 
 A cidade está em polvorosa, a catedral central foi palco de um episódio terrível. O bondoso padre João foi encontrado com um ferimento na cabeça, já sem vida, na cripta da igreja. 
 
-Na primeira página do jornal local a manchete: "Mensagem encriptada na cripta!". Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista na cena do crime, usando uma criptografia antiga: a Cifra de César. 
+Na primeira página do jornal a manchete: 
+
+```
+Criptografia na cripta!
+```
+
+Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista na cena do crime usando uma criptografia antiga: a Cifra de César. 
+
+Qual será o desfecho do "Crime da Cripta"?
+
+Escolha um personagem
+- [ ] Assassino: cifre uma pista para cena do crime. 
+- [ ] Detetive: decifre a pista e solucione o caso.
 
 # Objetivos
 
@@ -25,9 +37,8 @@ Escolher um número de casas para o deslocamento da Cifra de César, inserir uma
 
 # Usuários
 
-- Cidadãos de qualquer idade; 
-- Detetives;
-- Assassino.
+- Assassino;
+- Detetive.
 
 # Autoria
 
