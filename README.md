@@ -1,5 +1,5 @@
 # Encripta
-Pista ou solução, é você quem escolhe.
+Pista ou solução, é você quem decide.
 
 ## Jogo
 
@@ -24,8 +24,8 @@ Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista 
 Qual será o desfecho do "Crime da Cripta"?
 
 Escolha um personagem:
-- [ ] **Assassino** cifre uma pista para cena do crime. 
-- [ ] **Detetive** decifre a pista e solucione o caso.
+- [ ] **Assassino**: cifre uma pista para cena do crime. 
+- [ ] **Detetive**: decifre a pista e solucione o caso.
 
 # Objetivos
 
