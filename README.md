@@ -3,7 +3,7 @@ Seja um assassino e escreva uma pista ou um detetive e encontre a solução de u
 
 ## Jogo
 
-> Pista ou solução, é você quem decide.
+###### Pista ou solução, é você quem decide.
 
 O usuário irá assumir o papel de assassino ou detetive ao inserir uma palavra na página, gerando uma pista ou uma solução.
 
@@ -19,15 +19,13 @@ A cidade está em polvorosa, a catedral central foi palco de um episódio terrí
 
 Na primeira página do jornal a manchete: 
 
-```
-Criptografia na cripta!
-```
+> Criptografia na cripta!
 
 Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista na cena do crime usando uma criptografia antiga: a Cifra de César. 
 
 Qual será o desfecho do "Crime da Cripta"?
 
-Escolha um personagem
+Escolha um personagem:
 - [ ] Assassino: cifre uma pista para cena do crime. 
 - [ ] Detetive: decifre a pista e solucione o caso.
 
@@ -37,8 +35,8 @@ Escolher um número de casas para o deslocamento da Cifra de César, inserir uma
 
 # Usuários
 
-- Assassino;
-- Detetive.
+- Assassino
+- Detetive
 
 # Autoria
 
