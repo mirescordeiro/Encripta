@@ -2,13 +2,96 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Encripta</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <header>
+      <figure>
+        <!-- Imagem do topo -->
+        <img src="img/igreja_church.png" alt="Interior de uma igreja com o altar da Virgem Maria e bancos">
+      </figure>
+    </header>
+    <main>
+      <!-- Enredo -->
+      <section id="narrative">
+        <div id="gameName">
+          <h1>Encripta</h1>
+        </div>
+        <article>
+          <p>
+            A cidade está em polvorosa, a igreja foi palco de um episódio terrível.<br> 
+            O padre foi encontrado morto na cripta com um ferimento na cabeça.
+          </p>
+          <p>
+            Na primeira página do jornal diário a manchete: Criptografia na cripta!<br>
+            Segundo a publicação uma palavra cifrada foi deixada pelo assassino.
+          </p>
+          <p>
+            A matéria revelou ainda que a pista foi criada usando a cifra de César.<br>
+            Nesta cifra, letras são deslocadas no alfabeto considerando um valor.
+          </p>
+          <p>
+            Será que os detetives irão solucionar o crime? <br>
+            Quem será o assassino do “Crime da Cripta”?
+          </p>
+        </article>
+      </section>
+      <!-- Jogo -->
+      <section id="game">
+        <div id="gameStart">
+          <h2>Pista ou Solução</h2>
+        </div>
+        <div id="playGame">
+          <h3>Use você também a cifra de César!</h3>
+        </div>
+        <!-- Cifra e Personagem -->
+        <div id="gameInteraction">
+          <form action="">
+            <fieldset id="inputArea">
+              <p>
+                Digite uma palavra e escolha o valor de deslocamento:
+              </p>
+              <label for="palavra">
+                <input type="text" id="palavra" name="palavra" maxlength="33" placeholder="ESCREVA UMA PALAVRA SEM ACENTUACAO">
+              </label>
+              <label for="deslocamento">
+                <input type="number" id="deslocamento" name="deslocamento" min="1" max="26" placeholder="0">
+              </label>
+            </fieldset>
+            <fieldset id="buttonArea">
+              <div id="pickPlayer">
+                <div id="playerAssassin">
+                  <p>
+                    ASSASSINO
+                  </p>
+                  <button id="buttonCipher" type="button" name="cifrar">
+                    Cifrar
+                  </button>
+                </div>
+                <div id="playerDetective">
+                  <p>
+                    DETETIVE
+                  </p>
+                  <button id="buttonDecipher" type="button" name="decifrar">
+                    Decifrar
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div id="gameResult">
+          <div id="displayOutcome">
+            RESULTADO
+          </div>
+        </div>
+        <!-- Imagem do Footer -->
+        <figure>
+          <img src="img/cripta_crypt.png" alt="Portal da cripta da igreja com escadas de ambos os lados levando para o pulpito com uma cruz">
+        </figure>
+      </section>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
