@@ -14,8 +14,8 @@
     </header>
     <main>
       <!-- Enredo -->
-      <section id="narrative">
-        <div id="gameName">
+      <section>
+        <div>
           <h1>Encripta</h1>
         </div>
         <article>
@@ -32,23 +32,21 @@
             Nesta cifra, letras são deslocadas no alfabeto considerando um valor.
           </p>
           <p>
-            Será que os detetives irão solucionar o crime? <br>
+            Será que os detetives irão solucionar o crime?<br>
             Quem será o assassino do “Crime da Cripta”?
           </p>
         </article>
       </section>
       <!-- Jogo -->
-      <section id="game">
-        <div id="gameStart">
+      <section>
+        <div>
           <h2>Pista ou Solução</h2>
         </div>
-        <div id="playGame">
+        <div class="playGame">
           <h3>Use você também a cifra de César!</h3>
-        </div>
-        <!-- Cifra e Personagem -->
-        <div id="gameInteraction">
+          <!-- Cifra e Personagem -->
           <form action="">
-            <fieldset id="inputArea">
+            <fieldset class="inputArea">
               <p>
                 Digite uma palavra e escolha o valor de deslocamento:
               </p>
@@ -59,9 +57,9 @@
                 <input type="number" id="deslocamento" name="deslocamento" min="1" max="26" placeholder="0">
               </label>
             </fieldset>
-            <fieldset id="buttonArea">
-              <div id="pickPlayer">
-                <div id="playerAssassin">
+            <fieldset class="buttonArea">
+              <div class="pickPlayer">
+                <div class="button">
                   <p>
                     ASSASSINO
                   </p>
@@ -69,7 +67,7 @@
                     Cifrar
                   </button>
                 </div>
-                <div id="playerDetective">
+                <div class="button">
                   <p>
                     DETETIVE
                   </p>
