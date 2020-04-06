@@ -19,7 +19,7 @@ header figure {
 }
 
 header img {
-    margin-top: 55px;
+    margin-top: 50px;
     vertical-align: bottom;
 }
 
@@ -190,6 +190,6 @@ form button:hover {
 /* Footer */
 
 main figure {
-    margin: 0 auto 250px;
+    margin: 0 auto 100px;
     text-align: center;
 }
