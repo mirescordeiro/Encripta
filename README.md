@@ -3,13 +3,11 @@ Pista ou solução, é você quem decide.
 
 ## Jogo
 
-O usuário irá assumir o papel de assassino ou detetive ao inserir uma palavra na página, gerando uma pista ou uma solução.
+Encripta permite que o usuário brinque com a cifra de César, inserindo uma palavra e escolhendo um deslocamento. Esta palavra será cifrada ou decifrada dependendo do papel assumido pelo jogador: assassino ou detetive, gerando uma pista ou uma solução.
 
 Acesse pelo GitHub Pages:
 
-```
-www.encripta.com
-```
+[www.encripta.com](https://mirescordeiro.github.io/SAP004-cipher/src/) 
 
 ### Enredo
 
@@ -29,7 +27,7 @@ Escolha um personagem:
 
 # Objetivos
 
-Escolher um número de casas para o deslocamento da Cifra de César, inserir uma palavra que será cifrada ou decifrada.
+Escolher um número de casas para o deslocamento da Cifra de César, inserir uma palavra que será cifrada ou decifrada a partir da escolha de um dos personagens.
 
 # Usuários
 
