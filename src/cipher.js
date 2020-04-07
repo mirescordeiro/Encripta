@@ -4,22 +4,29 @@ const cipher = {
 
   encode: function (offset, word) {
     let encipher = "";
+    let text = word.toUpperCase();
     let number = Number(offset);
-    for (let l = 0; l < word.length; l++) {
-      let ascii = word.charCodeAt(l);
+    for (let l = 0; l < text.length; l++) {
+      let ascii = text.charCodeAt(l);
       let letters = ((ascii - 65 + number) % 26) + 65;
       encipher += String.fromCharCode(letters);
     }
     return encipher;
-  } 
-  
-  /* Decifrar
+  }, 
 
-  decode: function (word, offset) {
-    const decipher = word  offset;
+  // Decifrar
+  decode: function (offset, word) {
+    let decipher = "";
+    let text = word.toUpperCase();
+    let number = Number(offset);
+    for (let l = 0; l < text.length; l++) {
+      let ascii = text.charCodeAt(l);
+      let letters = ((ascii - 90 - number) % 26) + 90;
+      decipher += String.fromCharCode(letters);
+    }
     return decipher;
-  */
-                      
+  }
+
 };
 
 export default cipher;
