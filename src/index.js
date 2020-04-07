@@ -2,12 +2,12 @@ import cipher from './cipher.js';
 
 // Palavra
 
-const word = document.getElementById("word");
+const word = document.getElementById("word").value;
 
 
 // Deslocamento
 
-const offset = document.getElementById("offset");
+const offset = document.getElementById("offset").value;
 
 
 // Botão Cifrar
@@ -30,3 +30,4 @@ function decipher() {
 }
 
 buttonDecipher.addEventListener("click", decipher);
+
