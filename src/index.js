@@ -2,12 +2,12 @@ import cipher from './cipher.js';
 
 // Palavra
 
-const word = document.getElementById("word").value;
+let word = document.getElementById("word");
 
 
 // Deslocamento
 
-const offset = document.getElementById("offset").value;
+let offset = document.getElementById("offset");
 
 
 // Botão Cifrar
@@ -15,12 +15,12 @@ const offset = document.getElementById("offset").value;
 const buttonCipher = document.getElementById("buttonCipher");
 
 function encipher() {
-    document.getElementById("displayOutcome").innerHTML = `PISTA: ${cipher.encode(word, offset)}`;
+    document.getElementById("displayOutcome").innerHTML = `PISTA: ${cipher.encode(offset.value, word.value)}`;
 }
 
 buttonCipher.addEventListener("click", encipher);
 
-
+/*
 // Botão Decifrar
 
 const buttonDecipher = document.getElementById("buttonDecipher");
@@ -31,3 +31,4 @@ function decipher() {
 
 buttonDecipher.addEventListener("click", decipher);
 
+*/

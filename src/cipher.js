@@ -2,11 +2,12 @@ const cipher = {
   
   // Cifrar
 
-  encode: function (word, offset) {
-    const encipher = "";
+  encode: function (offset, word) {
+    let encipher = "";
+    let number = Number(offset);
     for (let l = 0; l < word.length; l++) {
       let ascii = word.charCodeAt(l);
-      let letters = ((ascii - 65 + offset) % 26) + 65;
+      let letters = ((ascii - 65 + number) % 26) + 65;
       encipher += String.fromCharCode(letters);
     }
     return encipher;
@@ -22,6 +23,8 @@ const cipher = {
 };
 
 export default cipher;
+
+/* should throw TypeError when invoked with wrong argument types (9ms)
 
 /*
 ((codigoDaLetraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra
