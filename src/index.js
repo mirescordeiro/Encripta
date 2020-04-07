@@ -2,29 +2,31 @@ import cipher from './cipher.js';
 
 // Palavra
 
-let word = document.getElementById("word");
+const word = document.getElementById("word");
+
 
 // Deslocamento
 
-let offset = document.getElementById("offset");
+const offset = document.getElementById("offset");
 
 
 // Botão Cifrar
 
-let buttonCipher = document.getElementById("buttonCipher");
+const buttonCipher = document.getElementById("buttonCipher");
 
-buttonCipher.addEventListener("click", cipher.encode);
+function encipher() {
+    document.getElementById("displayOutcome").innerHTML = "PISTA: ${cipher.encode(word,offset)}";
+}
+
+buttonCipher.addEventListener("click", encipher);
 
 
 // Botão Decifrar
 
-let buttonDecipher = document.getElementById("buttonDecipher");
+const buttonDecipher = document.getElementById("buttonDecipher");
 
-buttonDecipher.addEventListener("click", cipher.decode);
+function decipher() {
+    document.getElementById("displayOutcome").innerHTML = "SOLUÇÃO: ${cipher.decode(word,offset)}";
+}
 
-
-// Resultado
-
-let outcome = cipher;
-
-document.getElementById("displayOutcome").innerHTML = outcome;
+buttonDecipher.addEventListener("click", decipher);
