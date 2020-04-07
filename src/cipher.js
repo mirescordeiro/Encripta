@@ -4,9 +4,9 @@ const cipher = {
 
   encode: function encode(word, offset) {
     let encipher = "";
-    let letters = "";
+    let letters = 0;
     for (let l = 0; l < word.length; l++) {
-      letters = ((word[l].charCodeAt() - 65 + offset) % 26) + 65;
+      letters = ((word.charCodeAt(l) - 65 + offset) % 26) + 65;
       encipher += String.fromCharCode(letters);
     }
     return encipher;
