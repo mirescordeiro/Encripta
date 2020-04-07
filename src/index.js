@@ -15,7 +15,7 @@ const offset = document.getElementById("offset").value;
 const buttonCipher = document.getElementById("buttonCipher");
 
 function encipher() {
-    document.getElementById("displayOutcome").innerHTML = `PISTA: ${cipher.encode(word,offset)}`;
+    document.getElementById("displayOutcome").innerHTML = `PISTA: ${cipher.encode(word, offset)}`;
 }
 
 buttonCipher.addEventListener("click", encipher);
@@ -26,7 +26,7 @@ buttonCipher.addEventListener("click", encipher);
 const buttonDecipher = document.getElementById("buttonDecipher");
 
 function decipher() {
-    document.getElementById("displayOutcome").innerHTML = `SOLUÇÃO: ${cipher.decode(word,offset)}`;
+    document.getElementById("displayOutcome").innerHTML = `SOLUÇÃO: ${cipher.decode(offset, string)}`;
 }
 
 buttonDecipher.addEventListener("click", decipher);
