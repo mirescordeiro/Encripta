@@ -21,7 +21,7 @@ const cipher = {
     let number = Number(offset);
     for (let l = 0; l < text.length; l++) {
       let ascii = text.charCodeAt(l);
-      let letters = ((ascii - 90 + number) % 26) + 90;
+      let letters = ((ascii - 90 - number) % 26) + 90;
       decipher += String.fromCharCode(letters);
     }
     return decipher;
