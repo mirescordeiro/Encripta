@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
 
-// Palavra
+// Mensagem
 
-let word = document.getElementById("word");
+let message = document.getElementById("message");
 
 
 // Deslocamento
@@ -15,7 +15,7 @@ let offset = document.getElementById("offset");
 const buttonCipher = document.getElementById("buttonCipher");
 
 function encipher() {
-    document.getElementById("displayOutcome").innerHTML = `<strong>Pista</strong><br> ${cipher.encode(offset.value, word.value)}`;
+    document.getElementById("displayOutcome").innerHTML = `<strong>Pista</strong><br> ${cipher.encode(offset.value, message.value)}`;
 }
 
 buttonCipher.addEventListener("click", encipher);
@@ -26,7 +26,7 @@ buttonCipher.addEventListener("click", encipher);
 const buttonDecipher = document.getElementById("buttonDecipher");
 
 function decipher() {
-    document.getElementById("displayOutcome").innerHTML = `<strong>Solução</strong><br> ${cipher.decode(offset.value, word.value)}`;
+    document.getElementById("displayOutcome").innerHTML = `<strong>Solução</strong><br> ${cipher.decode(offset.value, message.value)}`;
 }
 
 buttonDecipher.addEventListener("click", decipher);
