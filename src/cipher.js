@@ -6,10 +6,23 @@ const cipher = {
     let encipher = "";
     let number = Number(offset);
 
-    
+
+    for (let l = 0; l < message.length; l++) {
+      let ascii = message.charCodeAt(l);
+      let letters = [];
+
+      // Maiúsculas
+      if (65 <= ascii <= 90){
+        letters = ((ascii - 65 + number) % 26) + 65;
+      }
+      // Minúsculas
+      if (97 <= ascii <= 122){
+        letters = ((ascii - 97 + number) % 26) + 97;
+      }
 
       encipher += String.fromCharCode(letters);
     }
+      
     return encipher;
   }, 
 
@@ -32,7 +45,7 @@ const cipher = {
         letters = ((ascii - 122 - number) % 26) + 122;
       }
 
-      encipher += String.fromCharCode(letters);
+      encipher += String.fromCharCode(letters.join(""));
     }
     return decipher;
   }
@@ -44,10 +57,6 @@ export default cipher;
 /* should throw TypeError when invoked with wrong argument types (9ms)
 
 /*
-((codigoDaLetraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra
-
-codigoASC => codigo0a25 => desloco => giro => codigoASC 
-
 
 TENTATIVA 1
 
@@ -115,7 +124,7 @@ TENTATIVA 3
         letters = ascii;
       }
 
-TENTATIVA 5
+TENTATIVA 4
 
       for (let l = 0; l < message.length; l++) {
       let ascii = message.charCodeAt(l);
@@ -126,4 +135,42 @@ TENTATIVA 5
       } else if (65 <= ascii <= 90){
         letters = ((ascii - 65 + number) % 26) + 65;
       }
+
+
+TENTATIVA 5
+
+      // Maiúscula ou minúscula e espaço
+      for (let l = 0; l < message.length; l++) {
+      let number = Number(offset);
+      let ascii = message.charCodeAt(l);
+
+      // Maiúscula
+      if (65 <= ascii <= 90){
+        letters = ((ascii - 65 + number) % 26) + 65;
+      }
+      // Minúsculas
+      else if (97 <= ascii <= 122){
+        letters = ((ascii - 97 + number) % 26) + 97;
+      }
+      else {
+        letters = 32;
+      }
+
+TENTATIVA 6 
+    for (let l = 0; l < message.length; l++) {
+      let ascii = message.charCodeAt(l);
+      let uppercase = [];
+      let lowercase = [];
+      let letters = [];
+
+      if (65 <= ascii <= 90){
+        uppercase = ((ascii - 65 + number) % 26) + 65;
+      } 
+      
+      if (97 <= ascii <= 122){
+        lowercase = ((ascii - 97 + number) % 26) + 97;
+      } 
+      
+      letters.concat(uppercase, lowercase);
+      letters.join("");
 */
