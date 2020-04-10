@@ -1,55 +1,64 @@
 const cipher = {
   
-  // Cifrar
-
+  // CIFRAR
   encode: function (offset, message) {
     let encipher = "";
-    let number = Number(offset);
-
-
-    for (let l = 0; l < message.length; l++) {
-      let ascii = message.charCodeAt(l);
-      let letters = [];
-
-      // Maiúsculas
-      if (65 <= ascii <= 90){
-        letters = ((ascii - 65 + number) % 26) + 65;
+    // Validar parâmetros
+    if (offset !== 0 && message !== ""){
+      for (let l = 0; l < message.length; l++) {
+        let number = Number(offset);
+        let ascii = message.charCodeAt(l);
+        let letters = [];
+        // Maiúsculas
+        if (65 <= ascii && ascii <= 90){
+          letters = ((ascii - 65 + number) % 26) + 65;
+        }
+        // Minúsculas
+        else if (97 <= ascii && ascii <= 122){
+          letters = ((ascii - 97 + number) % 26) + 97;
+        }
+        // Caracteres especiais
+        else {
+          letters = ascii;
+        }
+        encipher += String.fromCharCode(letters);
       }
-      // Minúsculas
-      if (97 <= ascii <= 122){
-        letters = ((ascii - 97 + number) % 26) + 97;
-      }
-
-      encipher += String.fromCharCode(letters);
+      return encipher;
+    } else {
+      throw new TypeError;
     }
-      
-    return encipher;
   }, 
 
   
-  // Decifrar
+  // DECIFRAR
   decode: function (offset, message) {
     let decipher = "";
-    let number = Number(offset);
-
-    for (let l = 0; l < message.length; l++) {
-      let ascii = message.charCodeAt(l);
-      let letters = 0;
-
-      // Maiúsculas
-      if (65 <= ascii <= 90){
-        letters = ((ascii - 90 - number) % 26) + 90;
+    // Validar parâmetros
+    if (offset !== 0 && message !== ""){
+      for (let l = 0; l < message.length; l++) {
+        let number = Number(offset);
+        let ascii = message.charCodeAt(l);
+        let letters = [];
+        // Maiúsculas
+        if (65 <= ascii && ascii <= 90){
+          letters = ((ascii - 90 - number) % 26) + 90;
+        }
+        // Minúsculas
+        else if (97 <= ascii && ascii <= 122){
+          letters = ((ascii - 122 - number) % 26) + 122;
+        }
+        // Caracteres especiais
+        else {
+          letters = ascii;
+        }
+        decipher += String.fromCharCode(letters);
       }
-      // Minúsculas
-      if (97 <= ascii <= 122){
-        letters = ((ascii - 122 - number) % 26) + 122;
-      }
-
-      encipher += String.fromCharCode(letters.join(""));
+      return decipher;
+    } else {
+      throw new TypeError;
     }
-    return decipher;
-  }
-  
+  },
+
 };
 
 export default cipher;
@@ -62,21 +71,21 @@ TENTATIVA 1
 
       for (let l = 0; l < message.length; l++) {
       let ascii = message.charCodeAt(l);
-      let punctuation = 33 <= ascii <= 47 || 58 <= ascii <= 64 || 91 <= ascii <= 96 || 123 <= ascii <= 126;
+      let punctuation = (32 <= ascii && ascii <= 47) || 58 <= ascii <= 64 || 91 <= ascii <= 96 || 123 <= ascii <= 126;
       let letters = 0;
 
       // Maiúsculas
-      if (65 <= ascii <= 90){
+      if (65 <= ascii && ascii <= 90){
         letters = ((ascii - 65 + number) % 26) + 65;
       }
       
       // Minúsculas
-      else if (97 <= ascii <= 122){
+      else if (97 <= ascii && ascii <= 122){
         letters = ((ascii - 97 + number) % 26) + 97;
       }
       
       // Pontuação
-      else if (ascii = punctuation){
+      if (ascii == punctuation){
         letters = ascii;
       }
 
