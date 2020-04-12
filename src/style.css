@@ -5,9 +5,12 @@ body {
 
 /* Fontes */
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    color: white;
+    font-family: 'Lora', serif;
+    font-family: 'Mr Dafoe', cursive;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+    -o-font-feature-settings: 'liga';
 }
 
 /* Topo */
