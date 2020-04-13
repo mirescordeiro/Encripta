@@ -3,7 +3,7 @@ Pista ou solução, é você quem decide.
 
 # Jogo
 
-Encripta permite que o usuário brinque com a cifra de César, inserindo uma palavra e escolhendo um deslocamento. Esta palavra será cifrada ou decifrada dependendo do papel assumido pelo jogador: assassino ou detetive, gerando uma pista ou uma solução.
+Encripta permite que o usuário brinque com a cifra de César, inserindo uma mensagem e escolhendo um deslocamento. Esta mensagem será cifrada ou decifrada dependendo do papel assumido pelo jogador: assassino ou detetive, gerando uma pista ou uma solução.
 
 Clique na imagem abaixo e acesse pelo GitHub Pages:
 
