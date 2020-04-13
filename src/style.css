@@ -3,29 +3,41 @@
     padding: 0;
 }
 
-body {
+html, body {
+    font-family: 'Lora', serif;
+    height: 100%;
     background-color: black;
 }
 
-/* Fontes */
-html {
-    font-family: 'Lora', serif;
+/* Único uso da Caveat*/
+#displayOutcome {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.7rem;
 }
 
-/* Home */
+
+/* HOME */
+
 #home {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
+    margin: 200px 0;
 }
 
-main#home {
-    width: 450px;
-    height: 560px;
+#home div {
+    margin-bottom: 15px;
 }
 
-.buttonBorder, .buttonBorder:active  {
-    font-size: 1.2rem;
+#buttonBorder {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#buttonBorder a {
+    font-size: 1.25rem;
     letter-spacing: .1rem;
     font-weight: 500;
     text-decoration: none;
@@ -34,11 +46,11 @@ main#home {
     border-color: white;
     border-style: solid;
     border-radius: 5px;
+    border-width: 3px;
 }
 
-.buttonBorder:hover  {
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
+#buttonBorder a:hover {
+    font-size: 1.25rem;
     letter-spacing: .1rem;
     font-weight: 500;
     text-decoration: none;
@@ -48,213 +60,280 @@ main#home {
     border-color: white;
     border-style: solid;
     border-radius: 5px;
+    border-width: 3px;
 }
 
-.buttonBorder a {
+
+/* START */
+
+#start {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 70px auto;
+    width: 600px;
+}
+
+#newspaper {
+    background-image: url(./img/jornal_newspaper.png);
+    margin: 20px 0;
+    width: 600px;
+    height: 292px;
+}
+
+#newspaper h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: .04rem;
+    border-top: 1.45px solid black;
+    border-bottom: 1.45px solid black;
+    padding: 0 0 8px;
+    margin: 20px auto 7px;
+    width: 545px;
+}
+
+.news {
+    border-top: 5px solid black;
+    padding-top: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 545px;
+    height: 170px;
+}
+
+.capitular::first-letter {
+    font-size: 3.2rem;
+    font-weight: 700;
+    float: left;
+    margin: 18px 7px 5px 0;
+}
+
+.indent {
+   text-indent: 10px;
+}
+
+.col1 {
+    font-size: .8rem;
+    line-height: 1rem;
+    text-align: left;
+    width: 148px;
+    margin: 5px 15px 0 1px;
+}
+
+.col2 {
+    width: 210px;
+    margin: 4px 20px 0 2px;
+}
+
+.col3 {
+    font-size: .8rem;
+    line-height: 1rem;
+    text-align: left;
+    width: 160px;
+    margin: 5px 0;
+}
+
+#buttonsArea {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 545px;
+    margin: 5px auto;
+}
+
+#buttonsArea p {
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
     text-align: center;
+    color: white;
+    padding-bottom: 30px;
 }
 
-/* Player */
+#buttonsArea img {
+    width: 170px;
+    margin: 0 15px;
+}
+
+#buttonsArea a {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #777777;
+    border-radius: 8px;
+}
+
+#buttonsArea a:hover {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #383838;
+    border-radius: 8px;
+}
+
+
+/* PLAYERS */
+
+#players {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 25px auto;
+    width: 510px;
+}
+
+.instructions {
+    font-size: .88rem;
+    letter-spacing: .04rem;
+    color: white;
+    padding: 6px 0 16px;
+
+}
+
+#playGame {
+    width: 500px;
+    height: 255px;
+    background-color: #777777;
+    border-radius: 5px;
+    border: 0;
+}
+
+form fieldset{
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.inputArea{
+    border: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 15px;
+}
+
+.offsetInfo {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .09rem;
+    color: white;
+    padding: 7px 0;
+    border-top: 2px solid #383838;
+    border-bottom: 2px solid #383838;
+}
+
+#playGame form input[type=number] {
+    font-family: 'Lora', serif;
+    width: 55px;
+    height: 40px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #777777;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#playGame form textarea {
+    font-family: 'Lora', serif;
+    font-size: 1.02rem;
+    letter-spacing: .01rem;
+    line-height: 1.37rem;
+    width: 430px;
+    height: 80px;
+    padding: 15px;
+    color: #777777;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 20px;
+
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color:#777777;
+  }
+
+.buttonsArea {
+    border: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+#buttonReset {
+    font-family: 'Lora', serif;
+    font-size: 1.02rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: white;
+    background-color: #383838;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+#buttonReset:hover {
+    font-family: 'Lora', serif;
+    font-size: 1.02rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+#buttonCipher, #buttonDecipher {
+    font-family: 'Lora', serif;
+    font-size: 1.02rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+#buttonCipher:hover, #buttonDecipher:hover {
+    font-family: 'Lora', serif;
+    font-size: 1.02rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    color: white;
+    background-color: #383838;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+}
 
 .clue {
-    font-family: 'Mr Dafoe', cursive;
-}
-/* Topo */
-
-header figure {
-    margin: 0 auto;
-    text-align: center;
-    background-color: white;
-}
-
-header img {
-    margin-top: 50px;
-    vertical-align: bottom;
-}
-
-/* Enredo */
-
-main {
-    margin: 0 auto;
-    padding-top: 10px;
-    width: 600px;
-}
-
-main h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 25px 0 30px;
-}
-
-main article {
-    border-top: 4px solid #797979;
-    border-bottom: 4px solid #797979;
-    padding: 25px 0;
-}
-
-main article p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    line-height: 1.7rem;
-    text-align: left;
-}
-
-/* Jogo */
-
-main h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-main h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    padding-top: 30px;
-}
-
-.playGame {
-    width: 600px;
-    height: 335px;
-    background-color: #777777;
-    border-radius: 5px;
-}
-
-.inputArea {
-    border: 0;
-    padding: 2px 25px;
-}
-
-form p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    text-align: left;
-}
-
-/* Palavra e Deslocamento */
-
-form input[type=text] {
-    width: 450px;
-    height: 50px;
-    padding-left: 15px;
-    font-size: 1.2rem;
-    color: #383838;
-    letter-spacing: 0.04rem;
-    border-radius: 5px;
-    border: 0;
-}
-
-form input[type=text]:focus {
-    outline: none;
-}
-
-form input[type=number] {
-    width: 55px;
-    height: 50px;
-    margin-left: 14px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #383838;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 0;
-}
-
-form input[type=number]:focus {
-    outline: none;
-}
-
-/* Botões */
-
-.buttonArea {
-    border: 0;
-    margin: 0;
-    padding: 10px 20px;
-}
-
-.button {
-    width: 263px;
-    height: 115px;
-    background-color: #383838;
-    display: inline-block;
-    margin: 7px;
-    border-radius: 5px;
-}
-
-.player {
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 0.04rem;
-    text-align: center;
-    margin: 15px 0 10px;
-}
-
-form button {
-    width: 140px;
-    height: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.07rem;
-    color: white;
-    text-align: center;
-    margin: 0 60px;
-    background-color: black;
-    border-radius: 5px;
-    border: 0;
-}
-
-form button:hover {
-    width: 140px;
-    height: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.07rem;
-    color: black;
-    text-align: center;
-    margin: 0 60px;
-    background-color: #777777;
-    border-radius: 5px;
-    border: 0;
-}
-
-form button:active {
-    width: 140px;
-    height: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.07rem;
-    color: white;
-    text-align: center;
-    margin: 0 60px;
-    background-color: black;
-    border-radius: 5px;
-    border: 0;
-}
-
-form button:focus {
-    outline: none;
-}
-
-/* Resultado */
-
-#displayOutcome {
-    width: 540px;
-    margin: 30px;
-    padding: 25px 0;
-    background-color: white;
-    font-size: 1.6rem;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-    border: 0;
-}
-
-/* Footer */
-
-footer figure {
-    margin: 0 auto 100px;
-    text-align: center;
+    background-image: url(./img/pista_clue.png);
+    margin: 15px 0;
+    width: 440px;
+    height: 110px;
+    padding: 20px 30px;
 }

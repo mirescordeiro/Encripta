@@ -10,13 +10,12 @@ let offset = document.getElementById("offset");
 const buttonReset = document.getElementById("buttonReset");
 buttonReset.addEventListener("click", function(){location.reload()});
 
-// Botão Decifrar
-const buttonDecipher = document.getElementById("buttonDecipher");
+// Botão Cifrar
+const buttonCipher = document.getElementById("buttonCipher");
 
-function decipher() {
-    let outcomeDecipher = cipher.decode(offset.value, message.value);
-    document.getElementById("displayOutcome").innerHTML = outcomeDecipher;
+function encipher() {
+    let outcomeCipher = cipher.encode(offset.value, message.value);
+    document.getElementById("displayOutcome").innerHTML = outcomeCipher;
 }
 
-buttonDecipher.addEventListener("click", decipher);
-
+buttonCipher.addEventListener("click", encipher);
