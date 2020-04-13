@@ -1,7 +1,7 @@
 # Encripta
 Pista ou solução, é você quem decide.
 
-## Jogo
+# Jogo
 
 Encripta permite que o usuário brinque com a cifra de César, inserindo uma palavra e escolhendo um deslocamento. Esta palavra será cifrada ou decifrada dependendo do papel assumido pelo jogador: assassino ou detetive, gerando uma pista ou uma solução.
 
@@ -15,24 +15,39 @@ A cidade está em polvorosa, a catedral central foi palco de um episódio terrí
 
 Na primeira página do jornal a manchete: 
 
-> Criptografia na cripta!
+> Criptografia na cripta
 
-Segundo a reportagem, uma palavra cifrada foi deixada pelo assassino como pista na cena do crime usando uma criptografia antiga: a Cifra de César. 
+Segundo a reportagem, uma mensagem cifrada foi deixada pelo assassino como pista na cena do crime usando uma criptografia antiga: a Cifra de César. 
 
 Qual será o desfecho do "Crime da Cripta"?
 
 Escolha um personagem:
-- [ ] **Assassino**: cifre uma pista para cena do crime. 
-- [ ] **Detetive**: decifre a pista e solucione o caso.
+- **Assassino**: cifre uma pista para cena do crime. 
+- **Detetive**: decifre a pista e solucione o caso.
 
 # Objetivos
 
-Escolher um número de casas para o deslocamento da Cifra de César, inserir uma palavra que será cifrada ou decifrada a partir da escolha de um dos personagens.
+Escolher um número de casas para o deslocamento da Cifra de César, inserir uma mensagem que será cifrada ou decifrada a partir da escolha de um dos personagens.
 
 # Usuários
 
-- Assassino
-- Detetive
+- Interessados em geral, com apelo maior para fãs de narrativas de mistério e suspense.
+
+# Prototipação
+
+Na primeira sprint do projeto o foco foi a concepção do produto e suas funcionalidades básicas:
+
+[![Assista o vídeo](https://img.youtube.com/vi/il1v-E9n3sw/mqdefault.jpg)](https://youtu.be/il1v-E9n3sw)
+
+Já na segunda semana novas telas foram desenvolvidas, ampliando a narrativa: 
+
+[![Assista o vídeo](https://img.youtube.com/vi/_CVs5bAyc4o/mqdefault.jpg)](https://youtu.be/_CVs5bAyc4o)
+
+Uma das melhorias na versão 2.0 do desenho de experiência foi a melhoria do input de deslocamento.
+Segundo comentários de usuários do MVP a interação com o valor não estava clara. Alguns estudos pós entrevistas:
+
+[Evolução do input de deslocamento](img/estudos_input_deslocamento.png)
+
 
 # Autoria
 
