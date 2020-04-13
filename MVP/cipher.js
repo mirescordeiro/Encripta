@@ -31,14 +31,6 @@ const cipher = {
 
 export default cipher;
 
-/* should throw TypeError when invoked with wrong argument types (9ms)
-
-/*
-((codigoDaLetraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra
-
-codigoASC => codigo0a25 => desloco => giro => codigoASC 
-*/
-
 // Histórico das tentativas do Hacker Edition:
 
 /*
