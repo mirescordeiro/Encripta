@@ -15,7 +15,13 @@ const buttonDecipher = document.getElementById("buttonDecipher");
 
 function decipher() {
     let outcomeDecipher = cipher.decode(offset.value, message.value);
-    document.getElementById("displayOutcome").innerHTML = outcomeDecipher;
+    
+    if (offset.value === "") {
+        // Mensagem de alerta
+        return alert ("Parece que você esqueceu de preencher o deslocamento.");
+    } else {
+        document.getElementById("displayOutcome").innerHTML = outcomeDecipher;
+    }
 }
 
 buttonDecipher.addEventListener("click", decipher);
