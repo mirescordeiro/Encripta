@@ -1,18 +1,64 @@
-body {
+* { 
     margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: black;
 }
 
 /* Fontes */
 html {
     font-family: 'Lora', serif;
-    font-family: 'Mr Dafoe', cursive;
-    font-feature-settings: 'liga';
-    -webkit-font-feature-settings: 'liga';
-    -moz-font-feature-settings: 'liga';
-    -o-font-feature-settings: 'liga';
 }
 
+/* Home */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main#home {
+    width: 450px;
+    height: 560px;
+}
+
+.buttonBorder, .buttonBorder:active  {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.buttonBorder:hover  {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.buttonBorder a {
+    text-align: center;
+}
+
+/* Player */
+
+.clue {
+    font-family: 'Mr Dafoe', cursive;
+}
 /* Topo */
 
 header figure {
