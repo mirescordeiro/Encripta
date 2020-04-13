@@ -9,7 +9,48 @@
     <link rel="icon" type="image/png" href="img/logo_icon.png" sizes="16x16" />
   </head>
   <body>
-    
+    <main id="players">
+      <figure>
+        <img src="img/detetive_detective.png" alt="Mesa de escritório com telefone de disco, tinteiro, canetas bico de pena, calendário e microfone antigos">
+      </figure>
+      <div>
+        <p>Na cifra de César letras são deslocadas no alfabeto segundo um valor</p>
+      </div>
+      <form>
+        <fieldset>
+          <div>
+            <p>
+              ESCOLHA O NÚMERO DE DESLOCAMENTO
+            </p>
+          </div>
+          <div>
+            <label for="deslocamento">
+              <input type="number" id="offset" name="deslocamento" min="-26" max="26" placeholder="0">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="mensagem">
+            <textarea id="message" name="mensagem" rows="4" cols="53" placeholder="Escreva uma pista para solucionar o caso">
+            </textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+          <button id="buttonReset" type="reset" name="nova solução">
+            Nova solução
+          </button>
+          <button id="buttonDecipher" type="button" name="decifrar">
+            Decifrar
+          </button>
+        </fieldset>
+      </form>
+      <div id="displayOutcome">
+        <!-- Mensagem será mostrada aqui -->
+      </div>
+      <a href="start.html">
+        VOLTAR
+      </a>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>

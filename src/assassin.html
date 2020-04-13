@@ -9,7 +9,48 @@
     <link rel="icon" type="image/png" href="img/logo_icon.png" sizes="16x16" />
   </head>
   <body>
-    
+    <main id="players">
+      <figure>
+        <img src="img/assassino_assassin.png" alt="Vista interna dos bancos da igreja e três portas de entrada com janelas de vidro e desenhos de cruz">
+      </figure>
+      <div>
+        <p>Na cifra de César letras são deslocadas no alfabeto segundo um valor</p>
+      </div>
+      <form>
+        <fieldset>
+          <div>
+            <p>
+              ESCOLHA O NÚMERO DE DESLOCAMENTO
+            </p>
+          </div>
+          <div>
+            <label for="deslocamento">
+              <input type="number" id="offset" name="deslocamento" min="-26" max="26" placeholder="0">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="mensagem">
+            <textarea id="message" name="mensagem" rows="4" cols="53" placeholder="Escreva uma mensagem para deixar como pista">
+            </textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+          <button id="buttonReset" type="reset" name="nova pista">
+            Nova pista
+          </button>
+          <button id="buttonDecipher" type="button" name="decifrar">
+            Cifrar
+          </button>
+        </fieldset>
+      </form>
+      <div id="displayOutcome">
+        <!-- Mensagem será mostrada aqui -->
+      </div>
+      <a href="start.html">
+        VOLTAR
+      </a>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
