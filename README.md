@@ -45,7 +45,10 @@ Já na segunda semana novas telas foram desenvolvidas, ampliando a narrativa:
 [![Assista o vídeo](https://img.youtube.com/vi/_CVs5bAyc4o/hqdefault.jpg)](https://youtu.be/_CVs5bAyc4o)
 
 Uma das melhorias na versão 2.0 do desenho de experiência foi a melhoria do input de deslocamento.
-Segundo comentários de usuários do MVP a interação com o valor não estava clara. Alguns estudos pós entrevistas:
+
+Segundo comentários de usuários do MVP a interação com o valor não estava clara. 
+
+Alguns estudos após a realização das entrevistas:
 
 [![Evolução dos layouts de input](img/estudos_input_deslocamento.png)](img/estudos_input_deslocamento.png)
 
