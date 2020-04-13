@@ -5,7 +5,7 @@ Pista ou solução, é você quem decide.
 
 Encripta permite que o usuário brinque com a cifra de César, inserindo uma palavra e escolhendo um deslocamento. Esta palavra será cifrada ou decifrada dependendo do papel assumido pelo jogador: assassino ou detetive, gerando uma pista ou uma solução.
 
-Acesse pelo GitHub Pages:
+Clique na imagem abaixo e acesse pelo GitHub Pages:
 
 [![Página inicial](img/home_encripta.png)](https://mirescordeiro.github.io/SAP004-cipher/src/)
 
