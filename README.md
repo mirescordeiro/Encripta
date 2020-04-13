@@ -39,10 +39,10 @@ Na primeira sprint do projeto o foco foi a concepção do produto e suas funcion
 
 Já na segunda semana novas telas foram desenvolvidas, ampliando a narrativa: 
 
+> Clique nas imagens para assistir a animação das telas
+
 [![Assista o vídeo](https://img.youtube.com/vi/il1v-E9n3sw/hqdefault.jpg)](https://youtu.be/il1v-E9n3sw)
 [![Assista o vídeo](https://img.youtube.com/vi/_CVs5bAyc4o/hqdefault.jpg)](https://youtu.be/_CVs5bAyc4o)
-
-> Clique nas imagens para assistir a animação das telas
 
 Uma das melhorias na versão 2.0 do desenho de experiência foi a melhoria do input de deslocamento.
 Segundo comentários de usuários do MVP a interação com o valor não estava clara. Alguns estudos pós entrevistas:
