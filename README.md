@@ -7,7 +7,7 @@ Encripta permite que o usuário brinque com a cifra de César, inserindo uma pal
 
 Acesse pelo GitHub Pages:
 
-[www.encripta.com](https://mirescordeiro.github.io/SAP004-cipher/src/) 
+[![Página inicial](img/home_encripta.png)](https://mirescordeiro.github.io/SAP004-cipher/src/)
 
 ### Enredo
 
@@ -36,6 +36,7 @@ Escolher um número de casas para o deslocamento da Cifra de César, inserir uma
 # Prototipação
 
 Na primeira sprint do projeto o foco foi a concepção do produto e suas funcionalidades básicas.
+
 Já na segunda semana novas telas foram desenvolvidas, ampliando a narrativa: 
 
 [![Assista o vídeo](https://img.youtube.com/vi/il1v-E9n3sw/hqdefault.jpg)](https://youtu.be/il1v-E9n3sw)
@@ -48,13 +49,8 @@ Segundo comentários de usuários do MVP a interação com o valor não estava c
 
 [![Evolução dos layouts de input](img/estudos_input_deslocamento.png)](img/estudos_input_deslocamento.png)
 
-
 # Autoria
 
 Tamires Cordeiro – [@mirescordeiro](https://twitter.com/mirescordeiro)
 
 A partir de projeto base da [@Laboratoria](https://github.com/Laboratoria)
-
-# Licença
-
-Projeto distribuído sob a licença CC BY-NC.
