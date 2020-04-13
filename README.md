@@ -38,8 +38,8 @@ Escolher um número de casas para o deslocamento da Cifra de César, inserir uma
 Na primeira sprint do projeto o foco foi a concepção do produto e suas funcionalidades básicas.
 Já na segunda semana novas telas foram desenvolvidas, ampliando a narrativa: 
 
-[![Assista o vídeo](https://img.youtube.com/vi/il1v-E9n3sw/mqdefault.jpg)](https://youtu.be/il1v-E9n3sw)
-[![Assista o vídeo](https://img.youtube.com/vi/_CVs5bAyc4o/mqdefault.jpg)](https://youtu.be/_CVs5bAyc4o)
+[![Assista o vídeo](https://img.youtube.com/vi/il1v-E9n3sw/hqdefault.jpg)](https://youtu.be/il1v-E9n3sw)
+[![Assista o vídeo](https://img.youtube.com/vi/_CVs5bAyc4o/hqdefault.jpg)](https://youtu.be/_CVs5bAyc4o)
 
 > Clique nas imagens para assistir a animação das telas
 
