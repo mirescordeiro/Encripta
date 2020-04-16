@@ -15,28 +15,24 @@ html, body {
     font-size: 1.7rem;
 }
 
+/* ALIGN */
 
-/* HOME */
-
-#home {
+.flexbox-center {
     display: flex;
     align-items: center;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin: 200px 0;
 }
 
-#home div {
-    margin-bottom: 15px;
-}
-
-#buttonBorder {
+.center-margin-top {
     text-align: center;
     margin-top: 15px;
 }
 
-#buttonBorder a {
+/* BUTTONS */
+
+a.button-border {
     font-size: 1.25rem;
     letter-spacing: .1rem;
     font-weight: 500;
@@ -49,7 +45,7 @@ html, body {
     border-width: 3px;
 }
 
-#buttonBorder a:hover {
+a:hover.button-border {
     font-size: 1.25rem;
     letter-spacing: .1rem;
     font-weight: 500;
