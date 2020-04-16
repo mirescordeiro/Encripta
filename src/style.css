@@ -59,35 +59,56 @@ a:hover.button-border {
     border-width: 3px;
 }
 
+/* WIDTH */
+
+.column-600 {
+    width: 600px;
+}
+
+.column-545 {
+    width: 545px;
+}
+
+.col1 {
+    width: 148px;
+    margin: 5px 15px 0 1px;
+}
+
+.col2 {
+    width: 210px;
+    margin: 4px 20px 0 2px;
+}
+
+.col3 {
+    width: 160px;
+    margin: 5px 0;
+}
+
+
+/* FONTS */
+
+.font8-1rem {
+    font-size: .8rem;
+    line-height: 1rem;
+}
 
 /* START */
 
-#start {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin: 70px auto;
-    width: 600px;
-}
-
-#newspaper {
+.newspaper {
     background-image: url(./img/jornal_newspaper.png);
-    margin: 20px 0;
-    width: 600px;
-    height: 292px;
+    margin: 15px 0;
+    padding-top: 4px;
+    height: 288px;
 }
 
-#newspaper h2 {
+.headline {
     font-size: 3.2rem;
     font-weight: 600;
     letter-spacing: .04rem;
+    padding-bottom: 8px;
+    margin: 15px auto 7px;
     border-top: 1.45px solid black;
     border-bottom: 1.45px solid black;
-    padding: 0 0 8px;
-    margin: 20px auto 7px;
-    width: 545px;
 }
 
 .news {
@@ -96,7 +117,6 @@ a:hover.button-border {
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
-    width: 545px;
     height: 170px;
 }
 
@@ -108,29 +128,10 @@ a:hover.button-border {
 }
 
 .indent {
-   text-indent: 10px;
+    text-indent: 10px;
 }
 
-.col1 {
-    font-size: .8rem;
-    line-height: 1rem;
-    text-align: left;
-    width: 148px;
-    margin: 5px 15px 0 1px;
-}
 
-.col2 {
-    width: 210px;
-    margin: 4px 20px 0 2px;
-}
-
-.col3 {
-    font-size: .8rem;
-    line-height: 1rem;
-    text-align: left;
-    width: 160px;
-    margin: 5px 0;
-}
 
 #buttonsArea {
     display: flex;
