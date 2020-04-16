@@ -25,10 +25,23 @@ html, body {
     justify-content: center;
 }
 
+.flex-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-col-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .center-margin-top {
     text-align: center;
     margin-top: 15px;
 }
+
 
 /* BUTTONS */
 
@@ -59,13 +72,36 @@ a:hover.button-border {
     border-width: 3px;
 }
 
+a.button-gray {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #777777;
+    border-radius: 8px;
+}
+
+a:hover.button-gray {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #383838;
+    border-radius: 8px;
+}
+
+
 /* WIDTH */
 
-.column-600 {
+.col-600 {
     width: 600px;
 }
 
-.column-545 {
+.col-545 {
     width: 545px;
 }
 
@@ -92,6 +128,7 @@ a:hover.button-border {
     line-height: 1rem;
 }
 
+
 /* START */
 
 .newspaper {
@@ -114,9 +151,6 @@ a:hover.button-border {
 .news {
     border-top: 5px solid black;
     padding-top: 8px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
     height: 170px;
 }
 
@@ -131,16 +165,7 @@ a:hover.button-border {
     text-indent: 10px;
 }
 
-
-
-#buttonsArea {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 545px;
-    margin: 5px auto;
-}
-
-#buttonsArea p {
+.info {
     font-size: 1.15rem;
     letter-spacing: .1rem;
     font-weight: 600;
@@ -149,31 +174,9 @@ a:hover.button-border {
     padding-bottom: 30px;
 }
 
-#buttonsArea img {
+.candles {
     width: 170px;
     margin: 0 15px;
-}
-
-#buttonsArea a {
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 15px 25px;
-    color: white;
-    background-color: #777777;
-    border-radius: 8px;
-}
-
-#buttonsArea a:hover {
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 15px 25px;
-    color: white;
-    background-color: #383838;
-    border-radius: 8px;
 }
 
 
