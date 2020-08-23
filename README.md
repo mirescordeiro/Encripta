@@ -54,6 +54,4 @@ Alguns estudos após a realização das entrevistas:
 
 # Autoria
 
-Tamires Cordeiro – [@mirescordeiro](https://twitter.com/mirescordeiro)
-
-A partir de projeto base da [@Laboratoria](https://github.com/Laboratoria)
+A por Tamires Cordeiro partir de projeto base da [@Laboratoria](https://github.com/Laboratoria)
