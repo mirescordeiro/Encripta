@@ -7,7 +7,7 @@ Encripta permite que o usuário brinque com a cifra de César, inserindo uma men
 
 Clique na imagem abaixo e acesse pelo GitHub Pages:
 
-[![Página inicial](img/home_encripta.png)](https://mirescordeiro.github.io/SAP004-cipher/src/)
+[![Página inicial](img/home_encripta.png)](https://mirescordeiro.github.io/Encripta/src/)
 
 ### Enredo
 
